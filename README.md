@@ -1,4 +1,4 @@
-# CMPT-353---Group-Project
+# CMPT-353 - Holiday-Recommendation-System
 
 ## Libraries required for the whole program
 |      | Libraries |
@@ -71,13 +71,10 @@
   * Make sure this program is in the same path as the file 'combined_data.csv' and 'ghcnd-states.txt'
   * Check the uploaded final output 'weather_final.csv' as well as the 'combined_data.csv' and 'ghcnd-states.txt' for reference
 
-## 02-create_train_models.py
-  * Disregard this as we moved all functions to holiday_location_recommendation.py
-
-## 03-distance_feature.py
+## 02-distance_feature.py
   * This program is an added feature for the project that involves recommending states based on their geographical proximity to a user's location
 
-## 04-holiday_location_recommendation.py
+## 03-holiday_location_recommendation.py
   * After extracting and cleaning the data from the computer cluster, data is read from 01-Data-Cleaning/weather-final.csvto make a recommendation for the user’s next holiday location.
 
   * To do so, there is a Command Line Interface (CLI) which prompts the user for their desired season (spring, summer, fall, winter), temperature unit (celsius, fahrenheit), high temperature range, low temperature range, precipitation in mm, snowfall in mm, and snow depth in mm, user's location longitude, user's location latitude. All of these inputs are validated, and the user is asked to input a correct value if they provide an input that does not make sense (e.g., if the provided input is a string that is not convertible for a certain feature).
@@ -95,13 +92,7 @@
 ## Additional Notes:
 
 - ghcn2014-2015 folder
-  * This is just our initial reference for cleaning
-
-- monthly-data-labelled.csv
-  * This file is from exercise 8, this is our desired format for the weather_final.csv after the data extraction and cleaning
-
-- monthly-data-unlabelled.csv
-  * another file from exercise 8
+  * This is our initial reference for cleaning
 
 - state_location.csv
   * This file is used for the distance_feature.py
