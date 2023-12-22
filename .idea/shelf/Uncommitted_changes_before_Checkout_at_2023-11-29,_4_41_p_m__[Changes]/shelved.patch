@@ -1,0 +1,55 @@
+Index: CMPT-353---Group-Project/four_season_analysis.py
+===================================================================
+diff --git a/CMPT-353---Group-Project/four_season_analysis.py b/CMPT-353---Group-Project/four_season_analysis.py
+--- a/CMPT-353---Group-Project/four_season_analysis.py	
++++ b/CMPT-353---Group-Project/four_season_analysis.py	
+@@ -1,13 +1,16 @@
+-import numpy as np
++import sys
+ import pandas as pd
+-import matplotlib.pyplot as plt
+ from sklearn.ensemble import RandomForestClassifier
+ 
+-data_train = pd.read_csv('Datasets/monthly-data-labelled.csv')
++data_train = pd.read_csv('monthly-data-labelled.csv')
+ # data_unlabelled = pd.read_csv('monthly-data-unlabelled.csv')
+ 
+-# Spring: March - May, Summer: June - Auguest, Fall: September - November, Winter: December - February
++# Spring: Apr - May - Jun
++# Summer: Jul - Aug - Sep
++# Fall: Oct - Nov - Dec
++# Winter: Jan - Feb - Mar
+ # Get rid of tmin, year
++
+ spring_train = data_train[['city',
+                            'tmax-03', 'tmax-04', 'tmax-05',
+                            'prcp-03', 'prcp-04', 'prcp-05',
+@@ -80,3 +83,28 @@
+     city4 = seasonModel.predict(randomizedInput(userInput))
+     city5 = seasonModel.predict(randomizedInput(userInput))
+     return city1, city2, city3, city4, city5
++
++
++def extract_data():
++    monthly_data_labelled = sys.argv[1]
++    monthly_data_unlabelled = sys.argv[2]
++
++    monthly_labelled_df = pd.read_csv(monthly_data_labelled)
++    monthly_unlabelled_df = pd.read_csv(monthly_data_unlabelled)
++
++    return monthly_labelled_df, monthly_unlabelled_df
++
++
++def separate_data(monthly_labelled):
++    
++
++def main():
++    # Extracting the data from the input file.
++    monthly_labelled_df, monthly_unlabelled_df = extract_data()
++
++    # Splitting the data into four separate dataframes one for each month.
++    spring_df, summer_df, fall_df, winter_df = separate_data(monthly_labelled_df)
++
++
++if __name__ == "__main__":
++    main()

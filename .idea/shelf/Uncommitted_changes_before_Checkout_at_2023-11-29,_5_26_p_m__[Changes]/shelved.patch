@@ -1,0 +1,58 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -1,14 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="60ee159d-5017-48bb-8b80-465c2c952b9f" name="Changes" comment="Completed userCLI.">
+-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
++    <list default="true" id="60ee159d-5017-48bb-8b80-465c2c952b9f" name="Changes" comment="Refactored four_season_analysis.py">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/CMPT-353---Group-Project/four_season_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/CMPT-353---Group-Project/four_season_analysis.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/holiday_location_recommendation.py" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/monthly-data-labelled.csv" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/monthly-data-unlabelled.csv" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -72,6 +66,7 @@
+       <workItem from="1700779572440" duration="4630000" />
+       <workItem from="1700941709271" duration="1247000" />
+       <workItem from="1701303248203" duration="3271000" />
++      <workItem from="1701306630761" duration="497000" />
+     </task>
+     <task id="LOCAL-00001" summary="First commit.">
+       <created>1700438006693</created>
+@@ -129,7 +124,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1700781970630</updated>
+     </task>
+-    <option name="localTasksCounter" value="9" />
++    <task id="LOCAL-00009" summary="Refactored four_season_analysis.py">
++      <created>1701307016401</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1701307016402</updated>
++    </task>
++    <option name="localTasksCounter" value="10" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -154,7 +156,8 @@
+     <MESSAGE value="user CLI added.&#10;Input season, temp unit, and temp range added." />
+     <MESSAGE value="Fixed bug in userCLI.&#10;Added the snowfall input." />
+     <MESSAGE value="Completed userCLI." />
+-    <option name="LAST_COMMIT_MESSAGE" value="Completed userCLI." />
++    <MESSAGE value="Refactored four_season_analysis.py" />
++    <option name="LAST_COMMIT_MESSAGE" value="Refactored four_season_analysis.py" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/Group_Project$holiday_location_recommendation.coverage" NAME="holiday_location_recommendation Coverage Results" MODIFIED="1700776260625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
